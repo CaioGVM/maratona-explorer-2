@@ -45,9 +45,9 @@ body {
   font-weight: bold;
   color: var(--text-color);
 }
-div {
+div#whole {
   width: 300px;
-  margin-top: 10vw;
+  margin-top: 10vw ;
   text-align: center;
   margin-inline: auto;
 }
@@ -70,14 +70,14 @@ p {
   font-size: 16px;
   font-weight: 400;
   }
-ul{
+ul.hub {
   margin: 48px 0;
   list-style: none;
 }
 a {
   text-decoration: none;
 }
-ul li a {
+ul.hub li a {
   height: 53px;
   display: flex;
   align-items: center;
@@ -91,15 +91,39 @@ ul li a {
   font-size: 14px;
   border: var(--bg-gcolor2) 2px solid;
 }
-ul li a:hover {
+ul.hub li a:hover {
   background-color: var(--primary-color-dark);
 }
+div#foot {
+  margin-top: 10vh;
+  width: 200px;  
+  text-align: center; 
+  margin-inline: auto;    
+}
+ul#color li {
+  display: inline;
+  margin: 0px 10px;
+  border: solid 1px var(--text-color);
+  border-radius: 50%;
+}
+ul#color li a {
+  padding: 0px 10px;
+}
+li#purple {
+  background-image: linear-gradient(#efacff, #550069);
+}
+li#red {
+  background-image: linear-gradient(#ffd8d5, #890900);
+}
+li#green {
+  background-image: linear-gradient(#d1ffd2, #265f28);
+}
 footer {
+  margin-top: 10px;
   opacity: 0.6;
   font-size: 12px;
   font-weight: 500;
   transition: opacity 200ms;
-  
 }
 footer:hover {
   opacity: 1;
